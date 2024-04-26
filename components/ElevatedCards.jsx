@@ -4,7 +4,7 @@ import { View, Text, Button, StyleSheet,ScrollView } from "react-native";
 const ElevatedCards = () =>{
     return(
         <View style={styles.mainContainer}>
-           <ScrollView horizontal style={styles.container}>
+           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.container}>
             <View style={[styles.Cards, styles.CardOne]}>
 
             </View>
