@@ -1,8 +1,14 @@
 import React, { Component } from "react";
-import { View, Text, Button, StyleSheet, StatusBar, ScrollView, TextInput, KeyboardAvoidingView, Image } from "react-native";
-import ElevatedCards from "../components/ElevatedCards";
+import { useNavigation } from "@react-navigation/native";
+import { View, Text, Button, StyleSheet, StatusBar, ScrollView, TextInput, KeyboardAvoidingView, Image, TouchableOpacity } from "react-native";
 
-const Home = () => {
+import ElevatedCards from "../components/ElevatedCards";
+import YourCart from "../components/YourCart";
+
+const Home = (props) => {
+    // const handleIconPress = () => {
+    //     navigation.navigate("YourCart"); 
+    // };
     return (
         <>
             <StatusBar backgroundColor={'white'}
@@ -12,10 +18,14 @@ const Home = () => {
 
                 <View style={styles.mainFirstChild}>
                     <KeyboardAvoidingView behavior="height" enabled={false}>
-                        
-                        <View style={{flexDirection:"row" }}>
-                            <TextInput style={styles.inputbox}/>
-                            <Image source={require('../assests/icons/cart.png')} style={{ width: 50, height: 50, marginTop:20, marginRight:12, marginLeft: 12, tintColor: '#626567'}} />
+
+                        <View style={{ flexDirection: "row" }}>
+                            <TextInput style={styles.inputbox} />
+                            <TouchableOpacity onPress={() => props.navigation.navigate('YourCart')}>
+                                <Image source={require('../assests/icons/cart.png')} style={{ width: 50, height: 50, marginTop: 20, marginRight: 12, marginLeft: 12, tintColor: '#626567' }} />
+                            </TouchableOpacity>
+                            {/* <Button onPress={() => navigation.navigate('YourCart')}/> */}
+
                         </View>
                     </KeyboardAvoidingView>
                     {/* <ElevatedCards/> */}
@@ -39,7 +49,7 @@ export default Home;
 const styles = StyleSheet.create({
 
     inputbox: {
-        flex:1,
+        flex: 1,
         fontSize: 20,
         backgroundColor: '#F2F4F4',
         marginLeft: 12,

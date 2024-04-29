@@ -1,17 +1,18 @@
 import React from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 
-const Account = () =>{
+
+const YourCart = () =>{
     return(
         <View style={styles.container}>
-            <Text>Account</Text>
+            <Text>Your Cart</Text>
             <Button title="Click Here"
                     onPress={()=>alert("button clicked!")}></Button>
         </View>
     )
 }
 
-export default Account;
+export default YourCart;
 
 
 const styles = StyleSheet.create({
