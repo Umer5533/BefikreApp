@@ -2,9 +2,9 @@ import { StyleSheet, Text, View, Button } from 'react-native'
 import React from 'react'
 
 const IntroScreen = (props) => {
-    setTimeout(()=>{
-        props.navigation.navigate('OTPScreen')
-    }, 3000)
+    // setTimeout(()=>{
+    //     props.navigation.navigate('SignUp')
+    // }, 3000)
   return (
     <View style={styles.container}>
       <Text style={styles.textOne}>Welcome to HomeX</Text>
