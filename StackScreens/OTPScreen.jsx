@@ -7,7 +7,7 @@ const OTPScreen = (props) => {
       <Text style={styles.textOne}>Welcome to OTP Screen</Text>
       <Text style={styles.textTwo}>Decorate your home with us</Text>
       {/* <Button title='Next' onPress={()=> props.navigation.navigate('Tabs')}/> */}
-      <Button title='Next' onPress={()=> props.navigation.goBack()}/>
+      <Button style={{backgroundColor: "red" }} title='Next' onPress={()=> props.navigation.goBack()}/>
     </View>
   )
 }
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'grey'
+        backgroundColor: '#034543'
     },
 
     textOne:{

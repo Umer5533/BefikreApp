@@ -21,6 +21,7 @@ import {
 } from 'react-native';
 import IntroScreen from './StackScreens/IntroScreen';
 import OTPScreen from './StackScreens/OTPScreen';
+import YourCart from './components/YourCart';
 
 
 
@@ -28,13 +29,22 @@ const App = () => {
 
 
   return (
+    <>
+    
     <NavigationContainer>
-
       <Stack.Navigator>
-        <Stack.Screen name={"IntroScreen"} component={IntroScreen}/>
-        <Stack.Screen name={"OTPScreen"} component={OTPScreen}/>
+       
+        {/* <Stack.Screen name={"IntroScreen"} component={IntroScreen} options={{headerShown:false}}/> */}
+        <Stack.Screen name={"OTPScreen"} component={OTPScreen} options={{headerShown:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
+
+    
+{/* <NavigationContainer>
+<Tabs/>
+</NavigationContainer> */}
+
+</>
   );
 }
 

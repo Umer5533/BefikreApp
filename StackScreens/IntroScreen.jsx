@@ -4,13 +4,13 @@ import React from 'react'
 const IntroScreen = (props) => {
     setTimeout(()=>{
         props.navigation.navigate('OTPScreen')
-    }, 2000)
+    }, 3000)
   return (
     <View style={styles.container}>
       <Text style={styles.textOne}>Welcome to HomeX</Text>
       <Text style={styles.textTwo}>Decorate your home with us</Text>
       {/* <Button title='Next' onPress={()=> props.navigation.navigate('Tabs')}/> */}
-      <Button title='Next' onPress={()=> props.navigation.goBack()}/>
+      <Button  title='Next' onPress={()=> props.navigation.goBack()}/>
     </View>
   )
 }
