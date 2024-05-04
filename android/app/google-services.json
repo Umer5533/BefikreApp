@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740352657346",
+    "project_id": "befikre-app",
+    "storage_bucket": "befikre-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740352657346:android:00e92a36a2f85ea4c2b85b",
+        "android_client_info": {
+          "package_name": "com.fyp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0h5LbOP1XV6b6_AOy6_j3MlNo4vMl1Mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
